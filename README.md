@@ -33,19 +33,13 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   739  mix archive.install hex phx_new 1.4.0
   743  mix phx.new --app elic_api elic-api
   744  cd elic-api/
-
-  737  mix archive.uninstall phx_new-1.4.0-rc.2
-  738  mix archive
-  739  mix archive.install hex phx_new 1.4.0
-  740  mix phx.new help
-  741  rm -rf help
-  742  mix phx.new elic-api
-  743  mix phx.new --app elic_api elic-api
-  744  cd elic-api/
-  745  ll
-  746  git remote add origin git@github.com:Eigo-Mt-Fuji/elic-api.git
+  747  git init
+  748  git remote add origin git@github.com:Eigo-Mt-Fuji/elic-api.git
+  749  git fetch origin
+  750  git add ./
   752  git status
   754  git commit -m "init"
-  762  git push origin master
   757  mix deps.get
+  762  git push origin master
 ```
+
