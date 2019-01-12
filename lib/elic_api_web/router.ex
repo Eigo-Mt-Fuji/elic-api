@@ -20,7 +20,8 @@ defmodule ElicApiWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ElicApiWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", ElicApiWeb do
+    pipe_through :api
+    resources "/messages", MessageController, except: [:new, :edit]
+  end
 end
